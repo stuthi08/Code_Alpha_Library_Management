@@ -1,0 +1,216 @@
+/* General Container and Typography Enhancements */
+.container,
+.row,
+.h2 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+h2, h3 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Login Container Improvements */
+.login-container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-form-1, .login-form-3 {
+    padding: 5%;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.login-form-1:hover, .login-form-3:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.login-form-1 h3, .login-form-3 h3 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.login-form-1 h3 {
+    color: #333;
+}
+
+.login-form-3 {
+    background-color: #0062cc;
+}
+
+.login-form-3 h3 {
+    color: #fff;
+}
+
+.login-container form {
+    padding: 10%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #0062cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 98, 204, 0.3);
+}
+
+/* Buttons Styling */
+.btnSubmit {
+    width: 50%;
+    border-radius: 25px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.login-form-1 .btnSubmit {
+    background-color: #0062cc;
+    color: #fff;
+}
+
+.login-form-1 .btnSubmit:hover {
+    background-color: #0056b3;
+    box-shadow: 0 8px 16px rgba(0, 98, 204, 0.2);
+}
+
+.login-form-3 .btnSubmit {
+    background-color: #fff;
+    color: #0062cc;
+}
+
+.login-form-3 .btnSubmit:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 8px 16px rgba(0, 98, 204, 0.2);
+}
+
+/* Forget Password Link */
+.login-form-1 .ForgetPwd, .login-form-3 .ForgetPwd {
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    margin-top: 1rem;
+}
+
+.login-form-1 .ForgetPwd {
+    color: #0062cc;
+}
+
+.login-form-1 .ForgetPwd:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.login-form-3 .ForgetPwd {
+    color: #fff;
+}
+
+.login-form-3 .ForgetPwd:hover {
+    color: #f1f1f1;
+    text-decoration: underline;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    .login-form-1, .login-form-3 {
+        padding: 10%;
+    }
+
+    .btnSubmit {
+        width: 100%;
+    }
+
+    .login-container form {
+        padding: 5%;
+    }
+}
+
+/* Dashboard Design */
+.dashboard-container {
+    margin: 2rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.dashboard-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.dashboard-stats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dashboard-stat {
+    flex: 1;
+    min-width: 250px;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dashboard-stat:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.dashboard-stat h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.dashboard-stat p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Chart Section */
+.dashboard-chart {
+    margin: 2rem 0;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
